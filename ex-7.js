@@ -42,7 +42,29 @@ let orders = [
 ];
 
 // Start coding here
-let isArray;
-let creditCardTypeOfBlindermann;
-let totalPurchaseOfJoannet;
-let totalPurchaseOfDary;
+//โจทย์ข้อที่ 1
+let isArray = Array.isArray(orders);
+console.log(`Is orders an array?   is ${isArray}`);
+
+//โจทย์ข้อที่ 2
+let creditCardTypeOfBlindermann = orders[2].creditCardType;
+console.log(orders[2].creditCardType);
+
+//โจทย์ข้อที่ 3
+orders[2].creditCardType = "visa";
+console.log(orders[2].creditCardType);
+
+//โจทย์ข้อที่ 4
+let totalPurchaseOfJoannet = orders[3].productQuantity;
+console.log(orders[3].productQuantity);
+
+//โจทย์ข้อที่ 5
+
+let totalPurchaseOfDary = orders[1].productQuantity * orders[1].productPrice;
+console.log(totalPurchaseOfDary);
+
+//โจทย์ข้อที่ 6
+orders.shift();
+
+//โจทย์ข้อที่ 7
+console.log(orders);

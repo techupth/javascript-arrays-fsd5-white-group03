@@ -22,3 +22,6 @@ const employees = [
 ];
 
 // Start coding here
+//ข้อที่ 5
+employees.pop();
+console.log(employees);
